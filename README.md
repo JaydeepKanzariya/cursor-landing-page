@@ -11,10 +11,10 @@ This is a desktop-first recreation of the [cursor.com](https://cursor.com) landi
 
 | # | Assignment section | What it maps to on cursor.com |
 |---|--------------------|-------------------------------|
-| 1 | Top navigation bar | Logo, Models / Product / Enterprise / Pricing / Resources, Sign in, *Contact sales* and *Download* pill buttons |
+| 1 | Top navigation bar | **Dark** bar (`#26251e`) with the light Cursor logo, Models / Product / Enterprise / Pricing / Resources, Sign in, *Contact sales* and a light *Download* pill button |
 | 2 | Hero | Headline "Cursor is your coding agent for building ambitious software.", a short description (Cursor's tagline), two CTAs, and a large product screenshot over the painted wallpaper |
 | 3 | Trusted by / logos | "Trusted every day by…" with 8 logo tiles (Stripe, Datadog, Linear, NVIDIA, Figma, Ramp, Decagon, Adobe) |
-| 4 | Feature sections | 4 two-column blocks with alternating image/text sides: *Agents turn ideas into code*, *Works autonomously*, *In every tool*, *Hand work to AI teammates* |
+| 4 | Feature sections | 3 two-column blocks (text + image) with alternating image/text sides: *Agents turn ideas into code*, *Works autonomously, runs in parallel*, *In every tool, at every step* |
 | 5 | Feature cards | "Stay on the frontier": section title + 3-card grid |
 | 6 | Testimonials | "The new way to build software.": 6 quote cards with avatar, name and role |
 | 7 | Use cases / stories | "Recent highlights": 4 story cards, each with a cover image (the post's own share image from cursor.com/blog), date, category, title and author |
@@ -64,7 +64,7 @@ The three core brand colors are confirmed against Cursor's [Brandfetch profile](
 
 Brandfetch doesn't list a typeface for Cursor, so the font comes from cursor.com's own CSS.
 
-> Note: the assignment brief mentions a dark navbar. The current cursor.com uses a light, warm off-white theme throughout, so this recreation follows the live site.
+> Note: the assignment brief asks for a dark navigation bar, so the navbar uses Cursor's brand dark color (`#26251e`) with light text. The rest of the page follows the live cursor.com, which uses a light, warm off-white theme.
 
 ## Layout notes
 

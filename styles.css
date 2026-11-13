@@ -115,8 +115,11 @@ h1, h2, h3 { font-weight: 400; }
   top: 0;
   z-index: 50;
   height: var(--header-h);
-  background: var(--bg);
+  background: var(--text);   /* dark navbar, per the brief */
+  color: var(--bg);
 }
+.site-header .btn--dark { background: var(--bg); border-color: var(--bg); color: var(--text); }
+.site-header .btn--outline { border-color: rgba(247, 247, 244, 0.3); color: var(--bg); }
 .site-header__inner {
   height: 100%;
   display: grid;
