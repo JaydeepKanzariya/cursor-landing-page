@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1440">
+  <title>Cursor: The best way to code with AI</title>
+  <meta name="description" content="Desktop-first recreation of the Cursor landing page, built with plain HTML and CSS.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- 1. Top navigation -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#" aria-label="Cursor home">
+        <img src="assets/logos/cursor-logo.svg" alt="Cursor" width="96" height="24">
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#">Models</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Enterprise</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-link" href="#">Sign in</a>
+        <a class="btn btn--sm btn--outline" href="#">Contact sales</a>
+        <a class="btn btn--sm btn--dark" href="#">Download</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 2. Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title" class="hero__title">Cursor is your coding agent for building ambitious software.</h1>
+        <p class="hero__desc">Built to make you extraordinarily productive, Cursor is the best way to build software with AI.</p>
+        <div class="btn-row">
+          <a class="btn btn--lg btn--dark" href="#">
+            Download for Windows
+            <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v9m0 0L4.5 7.5M8 11l3.5-3.5M3 14h10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--lg btn--light" href="#">Request a demo <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <figure class="hero__media">
+          <img src="assets/images/hero-demo.png" width="1300" height="720"
+               alt="Cursor Desktop showing an agent building a landing page, with the Cursor CLI open on top, over a painted landscape wallpaper.">
+        </figure>
+      </div>
+    </section>
+
+    <!-- 3. Trusted by -->
+    <section class="logos" aria-labelledby="logos-title">
+      <div class="container">
+        <h2 id="logos-title" class="logos__title">Trusted every day by teams that build world-class software</h2>
+        <ul class="logos__grid">
+          <li class="logo-card"><img src="assets/logos/stripe.svg" alt="Stripe" height="40"></li>
+          <li class="logo-card"><img src="assets/logos/datadog.svg" alt="Datadog" height="40"></li>
+          <li class="logo-card"><img src="assets/logos/linear.svg" alt="Linear" height="40"></li>
+          <li class="logo-card"><img src="assets/logos/nvidia.svg" alt="NVIDIA" height="40"></li>
+          <li class="logo-card"><img src="assets/logos/figma.svg" alt="Figma" height="40"></li>
+          <li class="logo-card"><img src="assets/logos/ramp.svg" alt="Ramp" height="40"></li>
+          <li class="logo-card"><img src="assets/logos/decagon.svg" alt="Decagon" height="40"></li>
+          <li class="logo-card"><img src="assets/logos/adobe.svg" alt="Adobe" height="40"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. Feature sections (alternating text / image) -->
+    <section class="features" aria-label="Features">
+      <div class="container">
+
+        <article class="feature">
+          <div class="feature__text">
+            <h3 class="feature__title">Agents turn ideas into code</h3>
+            <p class="feature__desc">Accelerate development by handing off tasks to Cursor, while you focus on making decisions.</p>
+            <a class="link-accent" href="#">Learn about agentic development <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <figure class="feature__media">
+            <img src="assets/images/feature-agents.png" width="840" height="680"
+                 alt="Cursor agent planning a Mission Control feature, with the plan document open beside the chat.">
+          </figure>
+        </article>
+
+        <article class="feature feature--reverse">
+          <div class="feature__text">
+            <h3 class="feature__title">Works autonomously, runs in parallel</h3>
+            <p class="feature__desc">Agents use their own computers to build, test, and demo features end to end for you to review.</p>
+            <a class="link-accent" href="#">Learn about cloud agents <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <figure class="feature__media">
+            <img src="assets/images/feature-cloud.png" width="840" height="680"
+                 alt="Cursor cloud agent building a research dashboard and showing a live preview.">
+          </figure>
+        </article>
+
+        <article class="feature feature--short">
+          <div class="feature__text">
+            <h3 class="feature__title">In every tool, at every step</h3>
+            <p class="feature__desc">Cursor runs in your terminal, collaborates in Slack, and reviews PRs in GitHub.</p>
+            <div class="install">
+              <div class="install__tabs" aria-hidden="true">
+                <span class="install__tab is-active">PowerShell</span>
+                <span class="install__tab">Linux / WSL</span>
+              </div>
+              <code class="install__cmd">irm 'https://cursor.com/install?win32=true' | iex</code>
+            </div>
+          </div>
+          <figure class="feature__media">
+            <img src="assets/images/feature-tools.png" width="840" height="650"
+                 alt="Cursor CLI in a terminal and Cursor collaborating in a Slack thread.">
+          </figure>
+        </article>
+
+        <article class="feature feature--reverse feature--short">
+          <div class="feature__text">
+            <h3 class="feature__title">Hand work to AI teammates</h3>
+            <p class="feature__desc">Bots can sign in to your tools, use them just like you do, and come back with finished work.</p>
+            <a class="link-accent" href="#">Download Grok Bot <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <figure class="feature__media">
+            <img src="assets/images/feature-bots.png" width="840" height="650"
+                 alt="Grok Bot desktop window working inside a project, over an abstract painted background.">
+          </figure>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 6. Testimonials -->
+    <section class="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <h2 id="testimonials-title" class="section-title section-title--center">The new way to build software.</h2>
+        <div class="testimonials__grid">
+
+          <figure class="quote-card">
+            <blockquote><p>&ldquo;It was night and day from one batch to another, adoption went from single digits to over 80%. It just spread like wildfire, all the best builders were using Cursor.&rdquo;</p></blockquote>
+            <figcaption class="person">
+              <img src="assets/images/avatar-diana-hu.png" alt="" width="40" height="40">
+              <span><span class="person__name">Diana Hu</span><span class="person__role">General Partner, Y Combinator</span></span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote-card">
+            <blockquote><p>&ldquo;My favorite enterprise AI service is Cursor. Every one of our engineers, some 40,000, are now assisted by AI and our productivity has gone up incredibly.&rdquo;</p></blockquote>
+            <figcaption class="person">
+              <img src="assets/images/avatar-jensen-huang.png" alt="" width="40" height="40">
+              <span><span class="person__name">Jensen Huang</span><span class="person__role">President &amp; CEO, NVIDIA</span></span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote-card">
+            <blockquote><p>&ldquo;The best LLM applications have an autonomy slider: you control how much independence to give the AI. In Cursor, you can do Cmd+K for targeted edits, or let it rip with the full autonomy agentic version.&rdquo;</p></blockquote>
+            <figcaption class="person">
+              <img src="assets/images/avatar-andrej-karpathy.png" alt="" width="40" height="40">
+              <span><span class="person__name">Andrej Karpathy</span><span class="person__role">CEO, Eureka Labs</span></span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote-card">
+            <blockquote><p>&ldquo;Cursor quickly grew from hundreds to thousands of extremely enthusiastic Stripe employees. We spend more on R&amp;D and software creation than any other undertaking, and there's significant economic outcomes when making that process more efficient.&rdquo;</p></blockquote>
+            <figcaption class="person">
+              <img src="assets/images/avatar-patrick-collison.png" alt="" width="40" height="40">
+              <span><span class="person__name">Patrick Collison</span><span class="person__role">Co-Founder &amp; CEO, Stripe</span></span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote-card">
+            <blockquote><p>&ldquo;The most useful AI tool that I currently pay for, hands down, is Cursor. It's fast, autocompletes when and where you need it to, handles brackets properly, sensible keyboard shortcuts, bring-your-own-model... everything is well put together.&rdquo;</p></blockquote>
+            <figcaption class="person">
+              <img src="assets/images/avatar-shadcn.png" alt="" width="40" height="40">
+              <span><span class="person__name">shadcn</span><span class="person__role">Creator of shadcn/ui</span></span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote-card">
+            <blockquote><p>&ldquo;It's definitely becoming more fun to be a programmer. We are at the 1% of what's possible, and it's in interactive experiences like Cursor where models like GPT-5 shine brightest.&rdquo;</p></blockquote>
+            <figcaption class="person">
+              <img src="assets/images/avatar-greg-brockman.jpg" alt="" width="40" height="40">
+              <span><span class="person__name">Greg Brockman</span><span class="person__role">President, OpenAI</span></span>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 / 7. Feature cards + use cases: "Stay on the frontier" (image + text cards) -->
+    <section class="frontier" aria-labelledby="frontier-title">
+      <div class="container">
+        <h2 id="frontier-title" class="section-title">Stay on the frontier</h2>
+        <div class="card-grid card-grid--3">
+
+          <article class="frontier-card">
+            <div class="frontier-card__text">
+              <h3 class="frontier-card__title">Use the best model for every task</h3>
+              <p class="frontier-card__desc">Choose between every cutting-edge model from OpenAI, Anthropic, Gemini, SpaceXAI, and Cursor.</p>
+              <a class="link-accent" href="#">Explore models <span aria-hidden="true">&nearr;</span></a>
+            </div>
+            <figure class="frontier-card__media">
+              <img src="assets/images/frontier-models.png" width="392" height="409" alt="Cursor model picker listing Auto, Grok, GPT, Fable, Opus, Gemini and Composer.">
+            </figure>
+          </article>
+
+          <article class="frontier-card">
+            <div class="frontier-card__text">
+              <h3 class="frontier-card__title">Build with autonomous agents</h3>
+              <p class="frontier-card__desc">Launch fleets of agents that work in parallel on ambitious tasks for hours or days.</p>
+              <a class="link-accent" href="#">Learn about cloud agents <span aria-hidden="true">&nearr;</span></a>
+            </div>
+            <figure class="frontier-card__media">
+              <img src="assets/images/frontier-agents.png" width="392" height="396" alt="Cursor on a phone showing several cloud agents working across repositories.">
+            </figure>
+          </article>
+
+          <article class="frontier-card">
+            <div class="frontier-card__text">
+              <h3 class="frontier-card__title">Develop enduring software</h3>
+              <p class="frontier-card__desc">Trusted by over half of the Fortune 500 to accelerate development, securely and at scale.</p>
+              <a class="link-accent" href="#">Explore enterprise <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <figure class="frontier-card__media">
+              <img src="assets/images/frontier-enterprise.jpg" width="392" height="409" alt="An engineer looking at monitors full of code.">
+            </figure>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Changelog -->
+    <section class="changelog" aria-labelledby="changelog-title">
+      <div class="container">
+        <h2 id="changelog-title" class="section-title">Changelog</h2>
+        <ol class="card-grid card-grid--4 changelog__list">
+          <li class="small-card">
+            <time class="small-card__meta" datetime="2026-11-06">Nov 6, 2026</time>
+            <a class="small-card__title" href="#">Voice Chat with Agents</a>
+          </li>
+          <li class="small-card">
+            <time class="small-card__meta" datetime="2026-11-05">Nov 5, 2026</time>
+            <a class="small-card__title" href="#">Build Live Apps in Cursor</a>
+          </li>
+          <li class="small-card">
+            <time class="small-card__meta" datetime="2026-10-20">Oct 20, 2026</time>
+            <a class="small-card__title" href="#">Agent SDK</a>
+          </li>
+          <li class="small-card">
+            <time class="small-card__meta" datetime="2026-10-16">Oct 16, 2026</time>
+            <a class="small-card__title" href="#">Cloud Agent Canvases and Environment Improvements</a>
+          </li>
+        </ol>
+        <a class="link-accent section-link" href="#">See what's new in Cursor <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </section>
+
+    <!-- 9. Team / About -->
+    <section class="team" aria-labelledby="team-title">
+      <div class="container">
+        <div class="feature feature--team">
+          <div class="feature__text">
+            <h2 id="team-title" class="feature__title feature__title--dark">Cursor is an applied research team focused on building the future of software development.</h2>
+            <a class="link-accent" href="#">Join us <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <figure class="feature__media">
+            <img src="assets/images/team-photo.jpg" width="840" height="525" alt="A Cursor engineer explaining agent architecture at a chalkboard to teammates.">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Stories / Recent highlights -->
+    <section class="highlights" aria-labelledby="highlights-title">
+      <div class="container">
+        <h2 id="highlights-title" class="section-title">Recent highlights</h2>
+        <div class="card-grid card-grid--4">
+          <article class="small-card story-card">
+            <figure class="story-card__media"><img src="assets/images/story-composer-2.jpg" width="800" height="420" alt="Composer 2 technical report cover"></figure>
+            <p class="small-card__meta"><time datetime="2026-03-27">Mar 27, 2026</time> &middot; Research</p>
+            <h3><a class="small-card__title" href="#">A technical report on Composer 2</a></h3>
+            <p class="byline"><img src="assets/images/avatar-sasha-rush.jpg" alt="" width="24" height="24"> Sasha Rush &middot; 3 min read</p>
+          </article>
+          <article class="small-card story-card">
+            <figure class="story-card__media"><img src="assets/images/story-spacex.jpg" width="800" height="420" alt="Cursor and SpaceX logos"></figure>
+            <p class="small-card__meta"><time datetime="2026-08-14">Aug 14, 2026</time> &middot; Company</p>
+            <h3><a class="small-card__title" href="#">Cursor is now a part of SpaceX</a></h3>
+            <p class="byline"><img src="assets/images/avatar-cursor.png" alt="" width="24" height="24"> Cursor Team &middot; 2 min read</p>
+          </article>
+          <article class="small-card story-card">
+            <figure class="story-card__media"><img src="assets/images/story-grok.jpg" width="800" height="420" alt="Grok 4.7 announcement cover"></figure>
+            <p class="small-card__meta"><time datetime="2026-09-21">Sep 21, 2026</time> &middot; Research</p>
+            <h3><a class="small-card__title" href="#">Introducing Grok 4.7</a></h3>
+            <p class="byline"><img src="assets/images/avatar-cursor.png" alt="" width="24" height="24"> Cursor Team &middot; 3 min read</p>
+          </article>
+          <article class="small-card story-card">
+            <figure class="story-card__media"><img src="assets/images/story-git.jpg" width="800" height="420" alt="Diagram of Git scaling across repository sizes"></figure>
+            <p class="small-card__meta"><time datetime="2026-08-18">Aug 18, 2026</time> &middot; Research</p>
+            <h3><a class="small-card__title" href="#">Git at any scale</a></h3>
+            <p class="byline"><span class="initials" aria-hidden="true">VM</span> Vicent Mart&iacute; &middot; 27 min read</p>
+          </article>
+        </div>
+        <a class="link-accent section-link" href="#">View all blog posts <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </section>
+
+    <!-- 10. Final CTA -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 id="cta-title" class="cta__title">Try Cursor now.</h2>
+        <a class="btn btn--lg btn--dark" href="#">
+          Download for Windows
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v9m0 0L4.5 7.5M8 11l3.5-3.5M3 14h10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 11. Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-cols" aria-label="Footer">
+        <div class="footer-col">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="#">Agents</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Code Review</a></li>
+            <li><a href="#">CLI</a></li>
+            <li><a href="#">Cloud Agents</a></li>
+            <li><a href="#">Composer</a></li>
+            <li><a href="#">Marketplace</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Workshops</a></li>
+            <li><a href="#">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Students</a></li>
+            <li><a href="#">Brand</a></li>
+            <li><a href="#">Future</a></li>
+            <li><a href="#">Anysphere</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Acceptable Use Policy</a></li>
+            <li><a href="#">Grok Bot Terms</a></li>
+            <li><a href="#">SpaceXSI Subscription Terms</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Data Use</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Privacy choices</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="#">X</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="footer-bottom">
+        <p class="footer-legal">
+          <small>&copy; 2026 Anysphere, Inc.</small>
+          <span class="cert">
+            <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.8 2.8 3.6v4.1c0 3 2.2 5.5 5.2 6.5 3-1 5.2-3.5 5.2-6.5V3.6L8 1.8Z M5.6 8l1.7 1.7 3.2-3.4" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/></svg>
+            SOC 2 | ISO27001 | ISO42001 | AIUC-1 Certified
+          </span>
+        </p>
+        <div class="footer-controls">
+          <div class="theme-switch" aria-label="Theme (static)">
+            <span class="theme-switch__opt is-active" title="System">
+              <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3" width="12" height="8" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M5.5 13.5h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </span>
+            <span class="theme-switch__opt" title="Light">
+              <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="2.6" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M8 1.8v1.4M8 12.8v1.4M1.8 8h1.4M12.8 8h1.4M3.6 3.6l1 1M11.4 11.4l1 1M3.6 12.4l1-1M11.4 4.6l1-1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
+            </span>
+            <span class="theme-switch__opt" title="Dark">
+              <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13 9.6A5.4 5.4 0 0 1 6.4 3a5.4 5.4 0 1 0 6.6 6.6Z" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+          <span class="lang-pill">
+            <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M2 8h12M8 2c1.8 1.8 2.6 3.8 2.6 6S9.8 12.2 8 14M8 2C6.2 3.8 5.4 5.8 5.4 8s.8 4.2 2.6 6" fill="none" stroke="currentColor" stroke-width="1.1"/></svg>
+            English
+            <svg class="icon icon--sm" viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
